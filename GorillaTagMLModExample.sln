@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GorillaTagMLTemplate", "GorillaTagMLTemplate\GorillaTagMLTemplate.csproj", "{CB4D4D12-97EA-45CA-85FF-8624D349B572}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GorillaTagMLModExample", "GorillaTagMLModExample\GorillaTagMLModExample.csproj", "{CB4D4D12-97EA-45CA-85FF-8624D349B572}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

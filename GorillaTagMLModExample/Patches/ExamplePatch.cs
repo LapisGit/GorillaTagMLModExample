@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using MelonLoader;
 
-namespace GorillaTagMLTemplate.Patches
+namespace GorillaTagMLModExample.Patches
 {
     // Patching can be a little complicated, so I'd recommend looking at the Patching docs on MelonLoader's wiki.
     // https://melonwiki.xyz/#/modders/patching

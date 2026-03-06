@@ -3,7 +3,7 @@ using System.IO;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace GorillaTagMLTemplate.Tools
+namespace GorillaTagMLModExample.Tools
 {
     public class AssetLoader
     {
@@ -38,11 +38,11 @@ namespace GorillaTagMLTemplate.Tools
             TaskCompletionSource<AssetBundle> completionSource = new TaskCompletionSource<AssetBundle>();
 
             // The path here is the namespace of your mod, followed by the folder path to the asset bundle, with dots instead of slashes.
-            // So if your mod's namespace is GorillaTagMLTemplate, and you put your asset bundle in a folder called Content in your project, the path would be "GorillaTagMLTemplate.Content.bundle".
+            // So if your mod's namespace is GorillaTagMLModExample, and you put your asset bundle in a folder called Content in your project, the path would be "GorillaTagMLModExample.Content.bundle".
             // If you change the name of your mod's namespace, make sure to change it here as well.
             // Also, make sure to make it so the bundle is compiled in with the mod in the .csproj file. An example of how to do this can be found in the .csproj file in this template.
             
-            Stream stream = typeof(YourModClass).Assembly.GetManifestResourceStream("GorillaTagMLTemplate.Content.bundle");
+            Stream stream = typeof(YourModClass).Assembly.GetManifestResourceStream("GorillaTagMLModExample.Content.bundle");
 
             AssetBundleCreateRequest request = AssetBundle.LoadFromStreamAsync(stream);
             request.completed += _ => completionSource.SetResult(request.assetBundle);

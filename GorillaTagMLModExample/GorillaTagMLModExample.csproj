@@ -22,7 +22,7 @@
     </ItemGroup>
   
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-      <Copy SourceFiles="$(TargetPath);bin/Debug/$(TargetFramework)/GorillaTagMLTemplate.pdb" DestinationFiles="$(GamePath)/Mods/GorillaTagMLTemplate.dll;$(GamePath)/Mods/GorillaTagMLTemplate.pdb" />
+      <Copy SourceFiles="$(TargetPath);bin/Debug/$(TargetFramework)/GorillaTagMLModExample.pdb" DestinationFiles="$(GamePath)/Mods/GorillaTagMLModExample.dll;$(GamePath)/Mods/GorillaTagMLModExample.pdb" />
     </Target>
   
     <ItemGroup>
